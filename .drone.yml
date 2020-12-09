@@ -4,7 +4,7 @@ type: docker
 name: default
 
 steps:
-- name: backend
+- name: TestLint
   image: golang:1.15
   commands:
   - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.33.0
